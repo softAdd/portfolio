@@ -6,14 +6,17 @@ class MenuStore {
     constructor() {
         this.items = [
             {
+                id: 'home',
                 title: 'Home',
                 selected: false
             },
             {
+                id: 'works',
                 title: 'Works',
                 selected: false
             },
             {
+                id: 'contact',
                 title: 'Contact',
                 selected: false
             }

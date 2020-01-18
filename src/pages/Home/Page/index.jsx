@@ -10,6 +10,11 @@ export default () => (
         <div className={styles.pageContent}>
             <Header />
             <Main />
+            <div className={styles.nightSunParent}>
+                <div className={styles.nightSun}>
+                    <div className={styles.nightSunCircle}></div>
+                </div>
+            </div>
         </div>
     </div>
 )
