@@ -4,8 +4,8 @@ import Menu from 'components/Menu'
 
 import styles from './style.module.sass'
 
-export default () => (
+export default ({ menuItems, onItemClick }) => (
     <header className={styles.globalHeader}>
-        <Menu />
+        <Menu items={menuItems} onItemClick={onItemClick} />
     </header>
 )

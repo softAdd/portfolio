@@ -1,14 +1,13 @@
 import React from 'react'
 
-import Header from 'components/Header'
 import Main from '../Main'
 
 import styles from './style.module.sass'
 
-export default () => (
-    <div className={styles.page}>
+export default ({ children }) => {
+    return (
         <div className={styles.pageContent}>
-            <Header />
+            {children}
             <Main />
             <div className={styles.nightSunParent}>
                 <div className={styles.nightSun}>
@@ -16,5 +15,5 @@ export default () => (
                 </div>
             </div>
         </div>
-    </div>
-)
+    )
+}

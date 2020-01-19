@@ -1,4 +1,4 @@
-import { observable } from 'mobx'
+import { observable, action } from 'mobx'
 
 class MenuStore {
     @observable items
@@ -8,7 +8,7 @@ class MenuStore {
             {
                 id: 'home',
                 title: 'Home',
-                selected: false
+                selected: true
             },
             {
                 id: 'works',
@@ -21,6 +21,14 @@ class MenuStore {
                 selected: false
             }
         ]
+    }
+
+    @action.bound
+    selectPage(id) {
+        this.items = this.items.map(item => {
+            item.id === id ? item.selected = true : item.selected = false
+            return item
+        })
     }
 }
 
