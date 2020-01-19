@@ -1,48 +1,34 @@
-import React, { Fragment } from 'react'
+import React from 'react'
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route
+} from 'react-router-dom'
 
-import { observer } from 'mobx-react'
 import { useStore } from 'store'
+import { observer } from 'mobx-react'
 
 import AppLayout from 'components/AppLayout'
-import Dashboard from 'components/Dashboard'
-import Home from 'pages/Home/Page'
+import Header from 'components/Header'
 
-import 'styles/index.sass'
+import HomeMain from 'pages/Home/Main'
+import WorksMain from 'pages/Works/Main'
 
-const Router = observer(
+export default observer(
     () => {
-        const { headerStore } = useStore()
-        const { items } = headerStore
-        const selectedPage = items.find(item => item.selected === true).id
-
-        const renderHome = () => (
-            <AppLayout>
-                <Dashboard>
-                    <Home />
-                </Dashboard>
-            </AppLayout>
-        )
-
-        const renderWorks = () => (
-            <AppLayout>
-                <Dashboard></Dashboard>
-            </AppLayout>
-        )
-
-        const renderContact = () => (
-            <AppLayout>
-                <Dashboard></Dashboard>
-            </AppLayout>
-        )
+        const { headerStore, appLayoutStore } = useStore()
 
         return (
-            <Fragment>
-                {selectedPage === 'home' ? renderHome() : null}
-                {selectedPage === 'works' ? renderWorks() : null}
-                {selectedPage === 'contact' ? renderContact() : null}
-            </Fragment>
+            <AppLayout theme={appLayoutStore.theme}>
+                <Router>
+                    <Header menuItems={headerStore.items} />
+
+                    <Switch>
+                        <Route exact path="/" component={HomeMain} />
+                        <Route path="/works" component={WorksMain} />
+                    </Switch>
+                </Router>
+            </AppLayout>
         )
     }
 )
-
-export default Router

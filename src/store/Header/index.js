@@ -8,16 +8,19 @@ class MenuStore {
             {
                 id: 'home',
                 title: 'Home',
+                route: '/',
                 selected: true
             },
             {
                 id: 'works',
                 title: 'Works',
+                route: '/works',
                 selected: false
             },
             {
                 id: 'contact',
                 title: 'Contact',
+                route: '/contact',
                 selected: false
             }
         ]

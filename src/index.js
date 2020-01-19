@@ -6,6 +6,8 @@ import { StoreProvider } from 'store'
 
 import Router from './router'
 
+import 'styles/index.sass'
+
 const App = () => {
     return (
         <StoreProvider>

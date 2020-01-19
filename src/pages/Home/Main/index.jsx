@@ -1,17 +1,20 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { useStore } from 'store'
+import { observer } from 'mobx-react-lite'
 
-import Button from 'components/Button'
+export default observer(
+    () => {
+        const { appLayoutStore } = useStore()
+        useEffect(() => {
+            appLayoutStore.selectDarkTheme()
 
-import styles from './style.module.sass'
+            return () => {
+                appLayoutStore.selectLightTheme()
+            }
+        }, [appLayoutStore])
 
-export default () => {
-    return (
-        <main className={styles.main}>
-            <div className={styles.mainHeading}>
-                <h1 className={styles.mainHeading__title}>Konkov Maksim</h1>
-                <h2 className={styles.mainHeading__subtitle}>Web Developer</h2>
-                <Button title="About Me" />
-            </div>
-        </main>
-    )
-}
+        return (
+            <main className="home"></main>
+        )
+    }
+)
