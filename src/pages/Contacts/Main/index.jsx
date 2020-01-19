@@ -6,7 +6,7 @@ import styles from './style.module.sass'
 export default observer(
     () => {
         return (
-            <main className={styles.mainWorks}></main>
+            <main className={styles.mainContacts}></main>
         )
     }
 )

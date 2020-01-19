@@ -4,6 +4,11 @@ class AppLayoutStore {
     @observable theme = 'light'
 
     @action.bound
+    selectDefaultTheme() {
+        this.theme = 'dark'
+    }
+
+    @action.bound
     selectDarkTheme() {
         this.theme = 'dark'
     }

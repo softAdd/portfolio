@@ -2,10 +2,10 @@ import React from 'react'
 
 import styles from './style.module.sass'
 
-export default ({ title, action }) => (
+export default ({ title, onClick }) => (
     <button
         className={styles.button}
-        onClick={action}
+        onClick={onClick}
     >
         {title}
     </button>

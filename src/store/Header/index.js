@@ -1,4 +1,4 @@
-import { observable, action } from 'mobx'
+import { observable, action, computed } from 'mobx'
 
 class MenuStore {
     @observable items
@@ -32,6 +32,12 @@ class MenuStore {
             item.id === id ? item.selected = true : item.selected = false
             return item
         })
+    }
+
+    @computed
+    get selectedItem() {
+        const selected = this.items.find(item => item.selected === true)
+        return selected ? selected : this.items[1]
     }
 }
 

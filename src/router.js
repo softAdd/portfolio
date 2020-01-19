@@ -13,6 +13,7 @@ import Header from 'components/Header'
 
 import HomeMain from 'pages/Home/Main'
 import WorksMain from 'pages/Works/Main'
+import ContactsMain from 'pages/Contacts/Main'
 
 export default observer(
     () => {
@@ -26,6 +27,7 @@ export default observer(
                     <Switch>
                         <Route exact path="/" component={HomeMain} />
                         <Route path="/works" component={WorksMain} />
+                        <Route path="/contact" component={ContactsMain} />
                     </Switch>
                 </Router>
             </AppLayout>
