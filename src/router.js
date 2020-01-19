@@ -4,7 +4,7 @@ import { observer } from 'mobx-react'
 import { useStore } from 'store'
 
 import AppLayout from 'components/AppLayout'
-import Header from 'components/Header'
+import Dashboard from 'components/Dashboard'
 import Home from 'pages/Home/Page'
 
 import 'styles/index.sass'
@@ -17,21 +17,21 @@ const Router = observer(
 
         const renderHome = () => (
             <AppLayout>
-                <Home>
-                    <Header menuItems={items} onItemClick={headerStore.selectPage} />
-                </Home>
+                <Dashboard>
+                    <Home />
+                </Dashboard>
             </AppLayout>
         )
 
         const renderWorks = () => (
             <AppLayout>
-                <Header menuItems={items} onItemClick={headerStore.selectPage} />
+                <Dashboard></Dashboard>
             </AppLayout>
         )
 
         const renderContact = () => (
             <AppLayout>
-                <Header menuItems={items} onItemClick={headerStore.selectPage} />
+                <Dashboard></Dashboard>
             </AppLayout>
         )
 
