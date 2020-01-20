@@ -1,11 +1,11 @@
 import React from 'react'
 
-import Menu from 'components/Menu'
+import BurgerMenu from 'components/BurgerMenu'
 
 import styles from './style.module.sass'
 
-export default ({ menuItems }) => (
+export default ({ menuItems, selectPage }) => (
     <header className={styles.globalHeader}>
-        <Menu items={menuItems} />
+        <BurgerMenu items={menuItems} selectPage={selectPage} />
     </header>
 )

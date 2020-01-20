@@ -22,7 +22,7 @@ export default observer(
         return (
             <AppLayout theme={appLayoutStore.theme}>
                 <Router>
-                    <Header menuItems={headerStore.items} />
+                    <Header menuItems={headerStore.items} selectPage={headerStore.selectPage} />
 
                     <Switch>
                         <Route exact path="/" component={HomeMain} />
