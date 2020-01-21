@@ -36,7 +36,7 @@ export default observer(
                         <h2 className={styles.mainSubtitle}>
                             Web Developer
                         </h2>
-                        <PrimaryPageButton title="About Me" onClick={redirectToContactPage} />
+                        <PrimaryPageButton title="Contact" onClick={redirectToContactPage} />
                     </div>
                     <div className={styles.mainIcons}>
                         <SmallIcon src="assets/icons/mail.svg" alt="email" href="mailto: soft.snake867@gmail.com" />

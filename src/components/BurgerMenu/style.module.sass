@@ -5,29 +5,27 @@ $activeColor: #191920
 
 .navbar
     display: flex
-    align-items: center
-    flex-wrap: wrap
+    flex-direction: column
     width: 100%
-    min-height: 70px
     max-width: 1896px
-    padding: 10px 19px
+    margin: 0 auto
 
 .menuList
     display: flex
     margin: 0
-    padding: 0
+    padding: 10px 19px
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2)
     list-style: none
 
     &__isClose
         display: flex
         margin: 0
-        padding: 0
+        padding: 10px 19px
         list-style: none
 
-        @media screen and (max-width: 765px)
-            display: none
-
 .listItem
+    display: flex
+    justify-content: center
     margin: 0
     padding: 0
 
@@ -38,14 +36,14 @@ $activeColor: #191920
     margin: 0
     padding: 10px 15px
     border: 1px solid transparent
-    border-radius: 5px
     background: none
+    border-radius: 5px
     color: $gray-title
     font-size: 16px
     line-height: 20px
     cursor: pointer
     box-sizing: border-box
-    transition: background .1s linear
+    transition: background .2s linear
 
     &:hover
         background-color: $hoverColor
@@ -54,52 +52,42 @@ $activeColor: #191920
         background-color: $activeColor
         outline: none
 
-    &.active
-        border: 1px solid $gray-title
-        outline: none
+.active
+    border: 1px solid rgba(255, 255, 255, 0.2)
+    outline: none
 
 .toggle
     display: none
 
-@media screen and (max-width: 765px)
-    .navbar
-        position: absolute
-        display: flex
-        flex-direction: column
-        min-height: 0
-        max-height: 100%
-        padding: 0
-        background-color: $dark
-        overflow-y: auto
-        overflow-x: hidden
-
-    .menuList
-        display: flex
-        flex-direction: column
-        align-items: center
-        text-align: center
-        padding-top: 10px
-
-    .listItem + .listItem
-        margin-left: 0
-        margin-bottom: 10px
-
-    .toggle
+    @media screen and (max-width: 765px)
         display: block
-        width: 100%
-        border: none
+        margin: 0
+        padding: 10px 19px
         background: none
-        text-align: center
+        border: none
         color: $white
-        font-size: 18px
-        line-height: 40px
-        clear: both
-        transition: all .1s linear
-        // outline: none
+        font-size: 20px
+        text-align: right
+        outline: none
         cursor: pointer
-
-        &:hover
-            background-color: $hoverColor
 
         &:active
             background-color: $activeColor
+
+@media screen and (max-width: 765px)
+    .menuList
+        flex-direction: column
+
+        &__isClose
+            display: none
+
+    .listItem
+        & + .listItem
+            margin: 0
+
+        &:not(:last-child)
+            margin-bottom: 9px
+
+    .itemButton
+        &:hover
+            background-color: transparent

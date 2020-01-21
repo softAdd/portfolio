@@ -19,7 +19,7 @@ class MenuStore {
             },
             {
                 id: 'contact',
-                title: 'Contact',
+                title: 'About Me',
                 route: '/contact',
                 selected: false
             }

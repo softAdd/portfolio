@@ -39,8 +39,8 @@ export default ({ items, selectPage }) => {
 
     return (
         <nav className={styles.navbar}>
-            <MenuList isOpenMenu={isOpenMenu} items={items} selectPage={selectPage} />
             <ToggleButton toggleMenu={() => setIsOpenMenu(!isOpenMenu)} />
+            <MenuList isOpenMenu={isOpenMenu} items={items} selectPage={selectPage} />
         </nav>
     )
 }
