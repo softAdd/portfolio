@@ -45,6 +45,7 @@ $activeColor: #191920
     line-height: 20px
     cursor: pointer
     box-sizing: border-box
+    transition: background .1s linear
 
     &:hover
         background-color: $hoverColor
@@ -62,7 +63,7 @@ $activeColor: #191920
 
 @media screen and (max-width: 765px)
     .navbar
-        position: fixed
+        position: absolute
         display: flex
         flex-direction: column
         min-height: 0

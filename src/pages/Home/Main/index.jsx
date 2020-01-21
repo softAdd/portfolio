@@ -44,6 +44,18 @@ export default observer(
                         <SmallIcon src="assets/icons/git.svg" alt="github" href="https://github.com/softAdd" />
                         <SmallIcon src="assets/icons/lin.svg" alt="linkedIn" href="#" />
                     </div>
+                    <div className={styles.animationContainer}>
+                        <div className={styles.animationArea}>
+                            <ul className={styles.boxArea}>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </main>
         )
