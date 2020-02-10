@@ -1,6 +1,6 @@
 import { observable, action, computed } from 'mobx'
 
-class MenuStore {
+class AppStore {
     @observable items
 
     constructor() {
@@ -8,19 +8,16 @@ class MenuStore {
             {
                 id: 'home',
                 title: 'Home',
-                route: '/',
                 selected: true
             },
             {
                 id: 'works',
                 title: 'Works',
-                route: '/works',
                 selected: false
             },
             {
                 id: 'contact',
                 title: 'About Me',
-                route: '/contact',
                 selected: false
             }
         ]
@@ -41,7 +38,7 @@ class MenuStore {
     }
 }
 
-const menuStore = new MenuStore()
+const appStore = new AppStore()
 
-export default menuStore
-export { MenuStore }
+export default appStore
+export { AppStore }

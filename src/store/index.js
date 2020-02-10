@@ -1,13 +1,11 @@
 import React from 'react'
 
-import headerStore from './Header'
-import appLayoutStore from './AppLayoutStore'
+import appStore from './AppStore'
 
 const storeContext = React.createContext(null)
 
 const store = {
-    headerStore,
-    appLayoutStore
+    appStore,
 }
 
 export const StoreProvider = props => {
