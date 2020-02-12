@@ -4,8 +4,8 @@ import styles from './style.module.sass'
 
 export default () => {
     return (
-        <main className={styles.main}>
-            {/*  */}
-        </main>
+        <div className={styles.works}>
+            works
+        </div>
     )
 }

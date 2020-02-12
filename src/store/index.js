@@ -1,11 +1,11 @@
 import React from 'react'
 
-import appStore from './AppStore'
+// import appStore from './AppStore'
 
 const storeContext = React.createContext(null)
 
 const store = {
-    appStore,
+    // appStore,
 }
 
 export const StoreProvider = props => {
