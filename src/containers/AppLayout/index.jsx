@@ -9,7 +9,7 @@ import AppMainRoutes from 'containers/AppMainRoutes'
 
 export default () => {
     return (
-        <div className={styles.appLayout__light}>
+        <div className={styles.appLayout}>
             <Router>
                 <AppHeader />
                 <AppMainRoutes />
