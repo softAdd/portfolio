@@ -1,5 +1,7 @@
 import React, { useState, Fragment } from 'react'
 
+import { NavLink } from 'react-router-dom'
+
 import styles from './style.module.sass'
 
 export default ({ items }) => {
@@ -11,12 +13,11 @@ export default ({ items }) => {
             <button className={styles.toggle} onClick={() => setIsOpenMenu(!isOpenMenu)}>&#9776;</button>
             <ul className={menuClass}>
                 {items ? items.map(item => {
-                    const buttonClass = item.selected ? [styles.itemButton, styles.active].join(' ') : styles.itemButton
                     return (
                         <li key={item.id} className={styles.listItem}>
-                            <button className={buttonClass} onClick={item.action}>
+                            <NavLink exact={true} to={item.href} className={styles.itemLink} activeClassName={styles.activeLink}>
                                 {item.title}
-                            </button>
+                            </NavLink>
                         </li>
                     )
                 }) : null}

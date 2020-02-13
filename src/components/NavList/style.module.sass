@@ -24,7 +24,7 @@ $activeColor: #191920
     & + .listItem
         margin-left: 9px
 
-.itemButton
+.itemLink
     margin: 0
     padding: 10px 15px
     border: 1px solid transparent
@@ -33,6 +33,7 @@ $activeColor: #191920
     color: $gray-title
     font-size: 16px
     line-height: 20px
+    text-decoration: none
     cursor: pointer
     box-sizing: border-box
     transition: background .2s linear
@@ -44,7 +45,7 @@ $activeColor: #191920
         background-color: $activeColor
         outline: none
 
-.active
+.activeLink
     border: 1px solid rgba(255, 255, 255, 0.2)
     outline: none
 
@@ -81,6 +82,6 @@ $activeColor: #191920
         &:not(:last-child)
             margin-bottom: 9px
 
-    .itemButton
+    .itemLink
         &:hover
             background-color: transparent
