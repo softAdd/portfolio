@@ -63,14 +63,19 @@ $activeColor: #191920
         text-align: right
         outline: none
         cursor: pointer
+        z-index: 4
 
         &:active
             background-color: $activeColor
 
 @media screen and (max-width: 765px)
     .menuList
+        position: absolute
         flex-direction: column
+        width: 100%
+        background-color: $dark
         border-bottom: 1px solid rgba(255, 255, 255, 0.2)
+        z-index: 3
 
         &__isClose
             display: none
