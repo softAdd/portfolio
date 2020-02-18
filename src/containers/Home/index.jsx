@@ -7,14 +7,17 @@ import CommunicationList from 'components/CommunicationList'
 export default () => {
     const icons = [
         {
+            id: 'git',
             href: '#',
             iconClass: 'fa fa-github'
         },
         {
+            id: 'mail',
             href: '#',
             iconClass: 'fa fa-envelope'
         },
         {
+            id: 'telegram',
             href: '#',
             iconClass: 'fa fa-telegram'
         }

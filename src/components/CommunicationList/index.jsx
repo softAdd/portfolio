@@ -7,7 +7,7 @@ import CommunicationIcon from 'components/CommunicationIcon'
 export default ({ listIcons }) => (
     <ul className={styles.comList}>
         {listIcons && listIcons.map(icon => (
-            <li>
+            <li key={icon.id}>
                 <CommunicationIcon icon={icon} />
             </li>
         ))}
