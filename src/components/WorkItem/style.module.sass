@@ -2,18 +2,31 @@
 
 .workItem
     display: flex
-    justify-content: flex-start
-    align-items: center
-    width: 100%
-    min-height: 200px
-    max-height: 400px
-    overflow: hidden
+    flex-direction: column
+
+    & + .workItem
+        margin-top: 10px
+
+    &__content
+        display: flex
 
     &__imageContainer
-        width: 30%
-        height: 100%
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 25%
+        min-height: 100%
         overflow: hidden
 
     &__image
-        height: 100%
         width: 100%
+
+    &__links
+        margin-top: 10px
+
+        & > a + a
+            margin-left: 10px
+
+@midia screen and (max-width: 760px)
+    .workItem__content
+        flex-direction: column

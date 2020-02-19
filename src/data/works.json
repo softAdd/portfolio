@@ -3,14 +3,14 @@
         "title": "test title 1",
         "subtitle": "test subtitle 1",
         "image": "https://avatars.mds.yandex.net/get-pdb/197794/1ce9673e-1298-431e-b212-c550396d9781/s1200",
-        "code": "yandex.ru",
-        "site": "google.com"
+        "code": "https://yandex.ru",
+        "site": "https://google.com"
     },
     {
         "title": "test title 2",
         "subtitle": "test subtitle 2",
         "image": "https://avatars.mds.yandex.net/get-pdb/805781/e9f31bb4-e65d-4ccf-8a5f-36b74d8a75be/s1200",
-        "code": "yandex.ru",
-        "site": "google.com"
+        "code": "https://yandex.ru",
+        "site": "https://google.com"
     }
 ]
