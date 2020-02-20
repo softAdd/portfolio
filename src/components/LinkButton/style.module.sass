@@ -1,10 +1,11 @@
 @import 'styles/core/_variables.sass'
 
 .button
+    position: relative
     display: inline-block
-    min-width: 118px
+    width: 100%
     margin: 2px 0
-    padding: 0.5em 1em
+    padding: 0.4em 1em
     border: 1px solid transparent
     border-radius: 4px
     background-color: $dark
@@ -12,13 +13,18 @@
     text-align: center
     text-decoration: none
     font-size: 1em
+    white-space: nowrap
     cursor: pointer
+    overflow: hidden
 
     &:hover
         background-color: $hoverColor
 
     &:focus
         outline: none
+        color: $black
+        background-color: $gray
 
     &:active
         background-color: $activeColor
+        color: $white
