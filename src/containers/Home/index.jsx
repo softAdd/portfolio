@@ -8,17 +8,17 @@ export default () => {
     const icons = [
         {
             id: 'git',
-            href: '#',
+            href: 'https://github.com/softAdd',
             iconClass: 'fa fa-github'
         },
         {
             id: 'mail',
-            href: '#',
+            href: 'mailto: soft.snake867@gmail.com',
             iconClass: 'fa fa-envelope'
         },
         {
             id: 'telegram',
-            href: '#',
+            href: 'https://teleg.run/softi3',
             iconClass: 'fa fa-telegram'
         }
     ]
