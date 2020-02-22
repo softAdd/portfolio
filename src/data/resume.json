@@ -1,21 +1,44 @@
 {
-    "title": "Коньков Максим",
-    "email": "soft.snake867@gmail.com",
-    "github": "https://github.com/softAdd",
-    "telegram": "https://teleg.run/softi3",
-    "aboutMe": [
-        "Изучаю веб-разработку уже чуть более года. ",
-        "Большая часть проектов - учебные, чтобы лучше понять различные технологии. ",
-        "Однако есть и коммерческий опыт - участие в стартапе, который занимается разработкой системы для связи CRM и мессенджеров. ",
-        "Во время участия в разработке я занимался добавлением различных возможностей в платформу на стеке React + Redux, а также занимался улучшением существующего интерфейса. "
-    ],
-    "skills": [
-        "HTML/HTML5",
-        "CSS/CSS3",
-        "SCSS/SASS",
-        "JavaScript",
-        "React",
-        "Redux",
-        "Webpack"
-    ]
+    "ru": {
+        "title": "Коньков Максим",
+        "email": "soft.snake867@gmail.com",
+        "github": "https://github.com/softAdd",
+        "telegram": "https://teleg.run/softi3",
+        "aboutMe": [
+            "Изучаю веб-разработку уже чуть более года. ",
+            "Большая часть проектов - учебные, чтобы лучше понять различные технологии. ",
+            "Однако есть и коммерческий опыт - участие в стартапе, который занимается разработкой системы для связи CRM и мессенджеров. ",
+            "Во время участия в разработке я занимался добавлением различных возможностей в платформу на стеке React + Redux, а также занимался улучшением существующего интерфейса. "
+        ],
+        "skills": [
+            "HTML/HTML5",
+            "CSS/CSS3",
+            "SCSS/SASS",
+            "JavaScript",
+            "React",
+            "Redux",
+            "Webpack"
+        ]
+    },
+    "en": {
+        "title": "Konkov Maksim",
+        "email": "soft.snake867@gmail.com",
+        "github": "https://github.com/softAdd",
+        "telegram": "https://teleg.run/softi3",
+        "aboutMe": [
+            "I’ve been studying web development for a little over a year. ",
+            "Most projects are educational in order to better understand the various technologies. ",
+            "However, there is also commercial experience - participating in a startup that is developing a system for connecting CRM and messengers. ",
+            "While participating in the development, I was engaged in adding various features to the platform on the React + Redux stack, as well as improving the existing interface. "
+        ],
+        "skills": [
+            "HTML/HTML5",
+            "CSS/CSS3",
+            "SCSS/SASS",
+            "JavaScript",
+            "React",
+            "Redux",
+            "Webpack"
+        ]
+    }
 }

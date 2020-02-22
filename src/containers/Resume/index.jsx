@@ -1,30 +1,35 @@
-import React, { useEffect } from 'react'
+import React, { useState } from 'react'
 
 import styles from './style.module.sass'
 
-import resume from 'data/resume.json'
+import resumeObject from 'data/resume.json'
 
 export default () => {
-    useEffect(() => console.log(resume))
+    const [locale] = useState('ru')
+    const resume = resumeObject[locale]
     return (
         <div className={styles.resume}>
             <div className={styles.resume__sheet}>
-                <h2 className="resume__title">{resume.title}</h2>
-                <h4 className="resume__subtitle">Контакты и ссылки</h4>
-                <ul className="resume__links">
+                <h2 className={styles.resume__title}>{resume.title}</h2>
+                <h4 className={styles.resume__subtitle}>{locale === 'ru' ? 'Контакты и ссылки' : 'Contacts and links'}</h4>
+                <ul className={styles.resume__links}>
                     <li><a href={resume.email} target="_blank" rel="noopener noreferrer">email</a></li>
                     <li><a href={resume.github} target="_blank" rel="noopener noreferrer">github</a></li>
                     <li><a href={resume.telegram} target="_blank" rel="noopener noreferrer">telegram</a></li>
                 </ul>
-                <h4 className="resume__subtitle">Обо мне</h4>
+                <h4 className={styles.resume__subtitle}>{locale === 'ru' ? 'Обо мне' : 'About me'}</h4>
                 <p className="resume__about">{resume.aboutMe}</p>
-                <h4 className="resume__subtitle">Навыки</h4>
+                <h4 className={styles.resume__subtitle}>{locale === 'ru' ? 'Ключевые навыки' : 'Main skills'}</h4>
                 <ul>
-                    {resume.skills.map(skill => (
+                    {resume.skills && resume.skills.map(skill => (
                         <li key={skill}>{skill}</li>
                     ))}
                 </ul>
-                <p className="resume__byscript">Предпочитаемый вид связи: telegram (<a href={resume.telegram} target="_blank" rel="noopener noreferrer">@softi3</a>).</p>
+                <hr className={styles.resume__footerLine} />
+                <p className="resume__byscript">
+                    {locale === 'ru' ? 'Предпочитаемый вид связи: telegram ' : 'Preferred type of communication: telegram ' }
+                    (<a href={resume.telegram} target="_blank" rel="noopener noreferrer">@softi3</a>).
+                </p>
             </div>
         </div>
     )
