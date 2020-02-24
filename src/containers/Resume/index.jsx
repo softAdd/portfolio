@@ -5,7 +5,7 @@ import styles from './style.module.sass'
 import resumeObject from 'data/resume.json'
 
 export default () => {
-    const [locale] = useState('ru')
+    const [locale] = useState('en')
     const resume = resumeObject[locale]
     return (
         <div className={styles.resume}>

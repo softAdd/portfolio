@@ -1,8 +1,15 @@
 @import 'styles/core/_variables.sass'
 
 .workItem
+    display: flex
+    flex-direction: column
+    flex-grow: 1
+    min-height: 100%
     margin-top: 10px
     padding: 0 10px 10px 10px
+
+    &__content
+        flex: 1 0 auto
 
     &__image
         width: 100%
@@ -16,13 +23,19 @@
         text-align: center
 
     &__subtitle
-        margin: 4px 0
+        max-width: 246px
+        margin: 4px auto 0 auto
         padding: 0
         text-align: center
 
     &__links
+        flex: 0 0 auto
         display: flex
+        justify-content: center
         margin-top: 15px
 
-        & a + a
+        & .buttonContainer + .buttonContainer
             margin-left: 10px
+
+.buttonContainer
+    flex-grow: 1

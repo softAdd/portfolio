@@ -14,8 +14,16 @@ export default ({ title, subtitle, image, code, site }) => (
             </div>
         </div>
         <div className={styles.workItem__links}>
-            {site && <LinkButton title="View Project" href={site} />}
-            {code && <LinkButton title="View Code" href={code} />}
+            {site &&
+                <div className={styles.buttonContainer}>
+                    <LinkButton title="View Project" href={site} />
+                </div>
+            }
+            {code &&
+                <div className={styles.buttonContainer}>
+                    <LinkButton title="View Code" href={code} />
+                </div>
+            }
         </div>
     </div>
 )
