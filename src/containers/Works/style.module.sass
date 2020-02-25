@@ -11,8 +11,30 @@
     width: 100%
     max-width: 900px
     margin: 0 auto
+    overflow: hidden
 
     &__item
         display: flex
+        min-height: 300px
 
     &__imageContainer
+        position: relative
+        width: 33%
+        overflow: hidden
+
+        & > img
+            position: absolute
+            min-width: 100%
+            min-height: 100%
+
+    &__mainContent
+        padding: 0 15px
+
+    &__title
+        margin: 0
+        margin-bottom: 8px
+        font-size: 26px
+
+    &__description
+        margin: 0
+        font-size: 18px
