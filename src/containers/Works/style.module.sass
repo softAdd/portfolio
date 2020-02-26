@@ -1,4 +1,4 @@
-@import 'styles/core/_variables.sass'
+@import 'styles'
 
 .works
     width: 100%
@@ -16,6 +16,11 @@
     &__item
         display: flex
         min-height: 300px
+        border: 1px solid rgba(0, 0, 0, 0.1)
+        border-radius: 3px
+
+        & + &
+            margin-top: 15px
 
     &__imageContainer
         position: relative
@@ -28,7 +33,14 @@
             min-height: 100%
 
     &__mainContent
-        padding: 0 15px
+        display: flex
+        flex-direction: column
+        padding: 0
+        flex-grow: 1
+
+    &__textContent
+        flex-grow: 1
+        padding: 5px 15px
 
     &__title
         margin: 0
@@ -38,3 +50,33 @@
     &__description
         margin: 0
         font-size: 18px
+
+    &__techList
+        display: flex
+        flex-wrap: wrap
+        margin: 0
+        margin-top: 1em
+        padding: 0
+        list-style: none
+
+        & li
+            padding: 5px
+            background-color: $hoverColor
+            border-radius: 1px
+            color: $graySecondary
+            text-decoration: none
+        
+        & li + li
+            margin-left: 5px
+
+    &__links
+        display: flex
+        justify-content: flex-end
+        margin: 7px
+        list-style: none
+
+        & li + li
+            margin-left: 4px
+
+        & li a
+            color: $black

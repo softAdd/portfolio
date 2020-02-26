@@ -2,6 +2,8 @@ import React from 'react'
 
 import styles from './style.module.sass'
 
+// import works from 'data/works.json'
+
 export default () => {
     return (
         <div className={styles.works}>
@@ -11,20 +13,21 @@ export default () => {
                         <img src="https://ingame.igrafond.ru/wp-content/uploads/2020/02/d218adda32efecebaac8d85543919029.jpg" alt="game" />
                     </div>
                     <div className={styles.workList__mainContent}>
-                        <div className="workList__textContent">
+                        <div className={styles.workList__textContent}>
                             <h2 className={styles.workList__title}>Urban Forest</h2>
                             <p className={styles.workList__description}>JS + Canvas HTML5 game.</p>
-                            <ul className="workList__techList">
-                                <li className="workList__tech">JavaScript</li>
-                                <li className="workList__tech">Canvas</li>
+                            <ul className={styles.workList__techList}>
+                                <li>JavaScript</li>
+                                <li>Canvas</li>
                             </ul>
                         </div>
-                        <ul className="workList__links">
-                            <li className="workList__linksItem">
-                                <a href="" className="workList__link">View Project</a>
+                        <ul className={styles.workList__links}>
+                            <li>
+                                <a href="">code</a>
                             </li>
-                            <li className="workList__linksItem">
-                                <a href="" className="workList__link">View Code</a>
+                            <li>/</li>
+                            <li>
+                                <a href="">project</a>
                             </li>
                         </ul>
                     </div>
