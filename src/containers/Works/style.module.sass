@@ -11,6 +11,7 @@
     width: 100%
     max-width: 900px
     margin: 0 auto
+    padding-bottom: 15px
     overflow: hidden
 
     &__item
@@ -61,7 +62,7 @@
 
         & li
             padding: 5px
-            background-color: $hoverColor
+            background-color: $dark
             border-radius: 1px
             color: $graySecondary
             text-decoration: none
@@ -80,3 +81,23 @@
 
         & li a
             color: $black
+
+
+@media screen and (max-width: 930px)
+    .workList
+        &__item
+            margin: 0 15px 15px 15px
+
+
+@media screen and (max-width: 720px)
+    .workList
+        &__item
+            flex-direction: column
+
+        &__imageContainer
+            height: 200px
+            width: 100%
+
+            & img
+                min-width: 100%
+                min-height: 100%

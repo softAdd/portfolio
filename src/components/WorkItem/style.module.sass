@@ -1,41 +1,85 @@
 @import 'styles/core/_variables.sass'
 
-.workItem
-    display: flex
-    flex-direction: column
-    flex-grow: 1
-    min-height: 100%
-    margin-top: 10px
-    padding: 0 10px 10px 10px
+.workList
 
-    &__content
-        flex: 1 0 auto
+    &__item
+        display: flex
+        height: 300px
+        border: 1px solid rgba(0, 0, 0, 0.1)
+        border-radius: 3px
 
-    &__image
-        width: 100%
-        height: 400px
-        background-size: cover
-        background-position: center center
+        & + &
+            margin-top: 15px
+
+    &__imageContainer
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 33%
+        max-height: 100%
+        overflow: hidden
+
+    &__mainContent
+        display: flex
+        flex-direction: column
+        padding: 0
+        flex-grow: 1
+
+    &__textContent
+        flex-grow: 1
+        padding: 5px 15px
 
     &__title
-        margin: 4px 0
-        padding: 0
-        text-align: center
+        margin: 0
+        margin-bottom: 8px
+        font-size: 26px
 
-    &__subtitle
-        max-width: 246px
-        margin: 4px auto 0 auto
+    &__description
+        margin: 0
+        font-size: 18px
+
+    &__techList
+        display: flex
+        flex-wrap: wrap
+        margin: 0
+        margin-top: 1em
         padding: 0
-        text-align: center
+        list-style: none
+
+        & li
+            padding: 5px
+            background-color: $dark
+            border-radius: 1px
+            color: $graySecondary
+            text-decoration: none
+        
+        & li + li
+            margin-left: 5px
 
     &__links
-        flex: 0 0 auto
         display: flex
-        justify-content: center
-        margin-top: 15px
+        justify-content: flex-end
+        margin: 7px
+        list-style: none
 
-        & .buttonContainer + .buttonContainer
-            margin-left: 10px
+        & li + li
+            margin-left: 4px
 
-.buttonContainer
-    flex-grow: 1
+        & li a
+            color: $black
+
+
+@media screen and (max-width: 930px)
+    .workList
+        &__item
+            margin: 0 15px 15px 15px
+
+
+@media screen and (max-width: 720px)
+    .workList
+        &__item
+            flex-direction: column
+
+        &__imageContainer
+            height: 200px
+            width: 100%

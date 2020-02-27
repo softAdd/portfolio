@@ -1,22 +1,25 @@
 [
     {
-        "title": "Full Stack App",
-        "subtitle": "Application is created using: docker, nodejs + express, couchdb, nginx, webpack",
-        "image": "https://avatars.mds.yandex.net/get-pdb/197794/1ce9673e-1298-431e-b212-c550396d9781/s1200",
+        "title": "Urban Forest",
+        "description": "Survival game, made on vanilla JS.",
+        "tags": [],
+        "screen": "https://ingame.igrafond.ru/wp-content/uploads/2020/02/d218adda32efecebaac8d85543919029.jpg",
         "code": "https://github.com/softAdd/nasa-gallery",
         "site": "https://google.com"
     },
     {
-        "title": "Game",
-        "subtitle": "JavaScript game",
-        "image": "https://avatars.mds.yandex.net/get-pdb/805781/e9f31bb4-e65d-4ccf-8a5f-36b74d8a75be/s1200",
+        "title": "Nasa Gallery",
+        "description": "FullStack app using nasa API.",
+        "tags": [],
+        "screen": "https://24tv.ua/resources/photos/news/201808/1010723.jpg?1537446441000",
         "code": "https://github.com/softAdd/gamejs",
         "site": "https://google.com"
     },
     {
         "title": "Portfolio",
-        "subtitle": "This page is created using React",
-        "image": "http://www.sf-kras.ru/wp-content/uploads/2019/05/82468329.jpg",
+        "description": "This page is created using React",
+        "tags": [],
+        "screen": "https://i.pinimg.com/736x/fc/5f/2a/fc5f2a03af288e0148fdb82ade7d2e87.jpg",
         "code": "https://github.com/softAdd/portfolio"
     }
 ]
