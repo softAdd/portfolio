@@ -15,7 +15,7 @@ export default ({ title, description, tags, screen, code, site }) => (
                 {description && <p className={styles.workList__description}>{description}</p>}
                 {tags &&
                     <ul className={styles.workList__techList}>
-                        {tags.map(tag => <li>tag</li>)}
+                        {tags.map(tag => <li>{tag}</li>)}
                     </ul>
                 }
             </div>

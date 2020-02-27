@@ -2,7 +2,10 @@
     {
         "title": "Urban Forest",
         "description": "Survival game, made on vanilla JS.",
-        "tags": [],
+        "tags": [
+            "JavaScript",
+            "Canvas"
+        ],
         "screen": "https://ingame.igrafond.ru/wp-content/uploads/2020/02/d218adda32efecebaac8d85543919029.jpg",
         "code": "https://github.com/softAdd/nasa-gallery",
         "site": "https://google.com"
@@ -10,7 +13,15 @@
     {
         "title": "Nasa Gallery",
         "description": "FullStack app using nasa API.",
-        "tags": [],
+        "tags": [
+            "JavaScript",
+            "NodeJS",
+            "Express",
+            "CouchDB",
+            "Webpack",
+            "Nginx",
+            "Docker"
+        ],
         "screen": "https://24tv.ua/resources/photos/news/201808/1010723.jpg?1537446441000",
         "code": "https://github.com/softAdd/gamejs",
         "site": "https://google.com"
@@ -18,7 +29,10 @@
     {
         "title": "Portfolio",
         "description": "This page is created using React",
-        "tags": [],
+        "tags": [
+            "JavaScript",
+            "React"
+        ],
         "screen": "https://i.pinimg.com/736x/fc/5f/2a/fc5f2a03af288e0148fdb82ade7d2e87.jpg",
         "code": "https://github.com/softAdd/portfolio"
     }

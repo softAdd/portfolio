@@ -52,7 +52,8 @@
             border-radius: 1px
             color: $graySecondary
             text-decoration: none
-        
+            text-align: center
+
         & li + li
             margin-left: 5px
 
@@ -68,12 +69,17 @@
         & li a
             color: $black
 
-
 @media screen and (max-width: 930px)
     .workList
         &__item
             margin: 0 15px 15px 15px
 
+        &__techList
+            & li
+                margin: 2px
+
+            & li + li
+                margin-left: 2px
 
 @media screen and (max-width: 720px)
     .workList
