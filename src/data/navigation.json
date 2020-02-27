@@ -1,0 +1,36 @@
+{
+    "headerItems": [
+        {
+            "id": "_home",
+            "title": "Home",
+            "href": "/"
+        },
+        {
+            "id": "_resume",
+            "title": "Resume",
+            "href": "/resume"
+        },
+        {
+            "id": "_works",
+            "title": "Works",
+            "href": "/works"
+        }
+    ],
+    "footerItems": [
+        {
+            "id": "_home",
+            "icon": "",
+            "href": "/"
+        },
+        {
+            "id": "_resume",
+            "icon": "",
+            "href": "/resume"
+        },
+        {
+            "id": "_works",
+            "icon": "",
+            "href": "/works"
+        }
+    ]
+}

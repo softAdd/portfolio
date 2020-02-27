@@ -1,10 +1,10 @@
 import React from 'react'
 
+import WorkItem from 'components/WorkItem'
+
 import styles from './style.module.sass'
 
 import works from 'data/works.json'
-
-import WorkItem from 'components/WorkItem'
 
 export default () => {
     return (

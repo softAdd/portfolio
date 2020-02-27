@@ -7,6 +7,7 @@ import resumeObject from 'data/resume.json'
 export default () => {
     const [locale] = useState('en')
     const resume = resumeObject[locale]
+    
     return (
         <div className={styles.resume}>
             <div className={styles.resume__sheet}>
