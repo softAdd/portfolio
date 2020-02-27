@@ -5,13 +5,18 @@ import styles from './style.module.sass'
 import resumeObject from 'data/resume.json'
 
 export default () => {
-    const [locale] = useState('en')
+    const [locale, setLocale] = useState('en')
     const resume = resumeObject[locale]
-    
+
     return (
         <div className={styles.resume}>
             <div className={styles.resume__sheet}>
                 <h2 className={styles.resume__title}>{resume.title}</h2>
+                <div className={styles.resume__locale}>
+                    <button className={styles.resume__localeEn} onClick={() => setLocale('en')}>English</button>
+                    <span>-</span>
+                    <button className={styles.resume__localeRu} onClick={() => setLocale('ru')}>Russian</button>
+                </div>
                 <h4 className={styles.resume__subtitle}>{locale === 'ru' ? 'Контакты и ссылки' : 'Contacts and links'}</h4>
                 <ul className={styles.resume__links}>
                     <li><a href={resume.email} target="_blank" rel="noopener noreferrer">email</a></li>
