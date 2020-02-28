@@ -15,7 +15,7 @@ export default ({ items }) => {
                 {items ? items.map(item => {
                     return (
                         <li key={item.id} className={styles.listItem}>
-                            <NavLink exact={true} to={item.href} className={styles.itemLink} activeClassName={styles.activeLink}>
+                            <NavLink exact to={item.href} className={styles.itemLink} activeClassName={styles.activeLink}>
                                 {item.title}
                             </NavLink>
                         </li>

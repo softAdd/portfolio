@@ -3,7 +3,7 @@ import React from 'react'
 import styles from './style.module.sass'
 
 export default ({ title, description, tags, screen, code, site }) => (
-    <div className={styles.workList__item}>
+    <div className={`${styles.workList__item}`}>
         {screen &&
             <div className={styles.workList__imageContainer}>
                 <img src={screen} alt={title} />

@@ -19,17 +19,17 @@
     "footerItems": [
         {
             "id": "_home",
-            "icon": "",
+            "iconClass": "fa fa-refresh",
             "href": "/"
         },
         {
             "id": "_resume",
-            "icon": "",
+            "iconClass": "fa fa-user-circle",
             "href": "/resume"
         },
         {
             "id": "_works",
-            "icon": "",
+            "iconClass": "fa fa-code",
             "href": "/works"
         }
     ]

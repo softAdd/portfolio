@@ -10,14 +10,14 @@
             "Однако есть и коммерческий опыт - участие в стартапе, который занимается разработкой системы для связи CRM и мессенджеров. ",
             "Во время участия в разработке я занимался добавлением различных возможностей в платформу на стеке React + Redux, а также занимался улучшением существующего интерфейса. "
         ],
+        "salary": "36.000 RUB - 540 USD",
         "skills": [
             "HTML/HTML5",
             "CSS",
             "SASS",
             "JavaScript",
             "React",
-            "Redux",
-            "Webpack"
+            "Redux"
         ]
     },
     "en": {
@@ -31,14 +31,14 @@
             "However, there is also commercial experience - participating in a startup that is developing a system for connecting CRM and messengers. ",
             "While participating in the development, I was engaged in adding various features to the platform on the React + Redux stack, as well as improving the existing interface. "
         ],
+        "salary": "540 USD - 36.000 RUB",
         "skills": [
             "HTML/HTML5",
             "CSS",
             "SASS",
             "JavaScript",
             "React",
-            "Redux",
-            "Webpack"
+            "Redux"
         ]
     }
 }
