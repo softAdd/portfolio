@@ -10,7 +10,7 @@ export default () => {
     return (
         <div className={styles.works}>
             <div className={styles.workList}>
-                {works && works.map(work => <WorkItem {...work} />)}
+                {works && works.map(work => <WorkItem {...work} key={work.title} />)}
             </div>
         </div>
     )
